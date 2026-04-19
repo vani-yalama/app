@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stock Alerts</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="store-bg">
+
+<button class="sidebar-toggle">Menu</button>
+
+<div class="flex">
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <a href="#">Dashboard</a>
+    <a href="#">Stock</a>
+    <a href="#">Orders</a>
+    <a href="#">Account</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container">
+
+    <!-- Page Title -->
+    <div class="card">
+      <h2>Stock Alerts</h2>
+    </div>
+
+    <!-- Low Stock -->
+    <div class="card">
+      <h3>Low Stock Items</h3>
+
+      <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));">
+
+        <div class="card center">
+          <p><strong>Milk</strong></p>
+          <p class="badge badge-danger">Qty: 3</p>
+        </div>
+
+        <div class="card center">
+          <p><strong>Bread</strong></p>
+          <p class="badge badge-warning">Qty: 5</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- High Demand -->
+    <div class="card">
+      <h3>High Demand Items</h3>
+
+      <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));">
+
+        <div class="card center">
+          <p><strong>Rice</strong></p>
+          <p>Qty: 10</p>
+        </div>
+
+        <div class="card center">
+          <p><strong>Eggs</strong></p>
+          <p>Qty: 12</p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<script src="../js/app.js"></script>
+
+</body>
+</html>

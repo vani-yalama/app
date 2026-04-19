@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reorder</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="customer-bg">
+
+<div class="container">
+
+  <div class="card">
+    <h2>Reorder</h2>
+  </div>
+
+  <!-- Order 1 -->
+  <div class="card">
+
+    <div>
+      <h3>ABC Store</h3>
+      <p>1.2 km • Delivered in 25 mins</p>
+    </div>
+
+    <div style="margin-top:10px;">
+      <p>Milk ×2 – ₹100</p>
+      <p>Bread ×1 – ₹40</p>
+      <p>Rice ×1 – ₹80</p>
+    </div>
+
+    <div class="center" style="margin-top: 10px;">
+      <button class="btn btn-primary" onclick="reorderItems()">Reorder</button>
+    </div>
+
+  </div>
+
+  <!-- Order 2 -->
+  <div class="card">
+
+    <div>
+      <h3>XYZ Mart</h3>
+      <p>2.5 km • Delivered in 35 mins</p>
+    </div>
+
+    <div style="margin-top:10px;">
+      <p>Shampoo ×1 – ₹120</p>
+      <p>Soap ×3 – ₹90</p>
+    </div>
+
+    <div class="center" style="margin-top: 10px;">
+      <button class="btn btn-primary" onclick="reorderItems()">Reorder</button>
+    </div>
+
+  </div>
+
+</div>
+
+<!-- Bottom Navigation -->
+<div class="navbar" style="position: fixed; bottom: 0; width: 95%; left: 2.5%;">
+  <div class="flex" style="justify-content: space-around;">
+    <div onclick="goToHome()">🏠</div>
+    <div onclick="goToCart()">🛒</div>
+    <div>🔁</div>
+    <div onclick="goToAccount()">👤</div>
+  </div>
+</div>
+
+<script src="../js/app.js"></script>
+
+</body>
+</html>

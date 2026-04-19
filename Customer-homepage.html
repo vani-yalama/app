@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="customer-bg">
+
+<div class="container">
+
+  <!-- Top Bar -->
+  <div class="card flex" style="justify-content: space-between; align-items:center;">
+    <div class="location" id="locationToggle">
+      🏠 <span>Deliver to: Home</span>
+    </div>
+  </div>
+
+  <!-- Search -->
+  <div class="card">
+    <input class="input" type="text" placeholder="Search for items...">
+  </div>
+
+  <!-- Offers -->
+  <div class="card">
+    <h3>Offers</h3>
+    <div class="flex">
+      <div class="card">10% off on groceries</div>
+      <div class="card">Flat ₹50 off</div>
+      <div class="card">Buy 1 Get 1</div>
+    </div>
+  </div>
+
+  <!-- Categories -->
+  <div class="card">
+    <h3>What's on your mind today?</h3>
+
+    <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));">
+      <div class="card" onclick="goToItems()">Grocery</div>
+      <div class="card" onclick="goToItems()">Pharmacy</div>
+      <div class="card" onclick="goToItems()">Electronics</div>
+      <div class="card" onclick="goToItems()">Clothing</div>
+      <div class="card" onclick="goToItems()">Food</div>
+      <div class="card" onclick="goToItems()">Stationery</div>
+    </div>
+  </div>
+
+  <!-- Items -->
+  <div class="card">
+    <h3>Popular Items</h3>
+
+    <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));">
+
+      <div class="card">
+        <p>Milk</p>
+        <button class="btn btn-primary">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <p>Rice</p>
+        <button class="btn btn-primary">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <p>Bread</p>
+        <button class="btn btn-primary">Add to Cart</button>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<!-- Bottom Navigation -->
+<div class="navbar" style="position: fixed; bottom: 0; width: 95%; left: 2.5%;">
+  <div class="flex" style="justify-content: space-around;">
+    <div onclick="goToHome()">🏠</div>
+    <div onclick="goToCart()">🛒</div>
+    <div onclick="goToReorder()">🔁</div>
+    <div onclick="goToAccount()">👤</div>
+  </div>
+</div>
+
+<script src="../js/app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Store Dashboard</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="store-bg">
+
+<button class="sidebar-toggle">Menu</button>
+
+<div class="flex">
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <a href="#">Dashboard</a>
+    <a href="#">Stock</a>
+    <a href="#">Orders</a>
+    <a href="#">Account</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container">
+
+    <!-- Store Header -->
+    <div class="card">
+      <h2 id="storeName">Your Store Name</h2>
+    </div>
+
+    <!-- Product List -->
+    <div class="card">
+      <h3>Products</h3>
+
+      <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));">
+
+        <div class="card center">
+          <p><strong>Milk</strong></p>
+          <p>₹50</p>
+          <p>Qty: 20</p>
+        </div>
+
+        <div class="card center">
+          <p><strong>Rice</strong></p>
+          <p>₹80</p>
+          <p>Qty: 50</p>
+        </div>
+
+        <div class="card center">
+          <p><strong>Bread</strong></p>
+          <p>₹40</p>
+          <p>Qty: 30</p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<script src="../js/app.js"></script>
+
+</body>
+</html>

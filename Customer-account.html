@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Account</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="customer-bg">
+
+<div class="container">
+
+  <!-- Header -->
+  <div class="card">
+    <h2>My Account</h2>
+  </div>
+
+  <!-- User Details -->
+  <div class="card">
+    <p><strong>Name:</strong> John Doe</p>
+    <p><strong>Phone:</strong> 9876543210</p>
+    <p><strong>Email:</strong> john@email.com</p>
+    <p><strong>Address:</strong> 123 Main Street, Bangalore</p>
+  </div>
+
+  <!-- Edit -->
+  <div class="card center">
+    <button class="btn btn-secondary" onclick="editDetails()">Edit Details</button>
+  </div>
+
+  <!-- Options -->
+  <div class="card">
+    <div class="flex" style="flex-direction: column;">
+      <div class="card" onclick="goToReorder()">🧾 My Orders</div>
+      <div class="card">🏠 Manage Address</div>
+      <div class="card">🔐 Change Password</div>
+    </div>
+  </div>
+
+  <!-- Logout -->
+  <div class="card center">
+    <button class="btn btn-primary" onclick="logout()">Logout</button>
+  </div>
+
+</div>
+
+<!-- Bottom Navigation -->
+<div class="navbar" style="position: fixed; bottom: 0; width: 95%; left: 2.5%;">
+  <div class="flex" style="justify-content: space-around;">
+    <div onclick="goToHome()">🏠</div>
+    <div onclick="goToCart()">🛒</div>
+    <div onclick="goToReorder()">🔁</div>
+    <div>👤</div>
+  </div>
+</div>
+
+<script src="../js/app.js"></script>
+
+</body>
+</html>
