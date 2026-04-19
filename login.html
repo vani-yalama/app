@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="auth-bg">
+
+<div class="container center">
+
+  <div class="card" style="width: 380px;">
+
+    <!-- Logo -->
+    <div class="logo" style="text-align:center; margin-bottom: 15px;">
+      <h2>My App</h2>
+    </div>
+
+    <!-- Tabs -->
+    <div class="flex" style="margin-bottom: 15px;">
+      <button class="btn btn-secondary" id="customerTab">Customer</button>
+      <button class="btn btn-secondary" id="storeTab">Store Owner</button>
+    </div>
+
+    <!-- Customer Login -->
+    <div id="customerLogin">
+      <input class="input" type="email" id="Email" placeholder+"Enter Email">
+      <input class="input" type="text" placeholder="Phone Number">
+      <input class="input" type="password" placeholder="Password">
+      <button onclick="handleLogin()">Login</button>
+
+      <p>Forgot Password?</p>
+      <p id="showCustomerRegister">New user? Register</p>
+    </div>
+
+    <!-- Store Login -->
+    <div id="storeLogin" style="display:none;">
+      <input class="input" type="text" placeholder="Store ID">
+      <input class="input" type="password" placeholder="Password">
+      <button onclick="handleLogin()">Login</button>
+
+      <p>Forgot Password?</p>
+      <p id="showStoreRegister">New store? Request access</p>
+    </div>
+
+    <!-- Customer Register -->
+    <div id="customerRegister" style="display:none;">
+      <input class="input" type="email" placeholder="Email">
+      <input class="input" type="text" placeholder="Phone Number">
+      <input class="input" type="password" placeholder="Password">
+      <input class="input" type="password" placeholder="Confirm Password">
+      <button class="btn btn-primary">Register</button>
+
+      <p id="backToCustomerLogin">Back to Login</p>
+    </div>
+
+    <!-- Store Register -->
+    <div id="storeRegister" style="display:none;">
+      <input class="input" type="text" placeholder="Store Name">
+      <input class="input" type="text" placeholder="Owner Name">
+      <input class="input" type="text" placeholder="Phone Number">
+      <input class="input" type="email" placeholder="Email">
+      <input class="input" type="text" placeholder="Store Address">
+      <input class="input" type="text" placeholder="GST / Business ID">
+      <input class="input" type="text" placeholder="Product Category">
+      <input class="input" type="password" placeholder="Password">
+      <input class="input" type="password" placeholder="Confirm Password">
+
+      <button class="btn btn-primary">Request Approval</button>
+
+      <p id="backToStoreLogin">Back to Login</p>
+    </div>
+
+  </div>
+ 
+</div>
+
+<script src="../js/app.js"></script>
+
+</body>
+</html>
